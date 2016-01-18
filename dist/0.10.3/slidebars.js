@@ -32,7 +32,9 @@
 			siteClose: true, // true or false - Enable closing of Slidebars by clicking on #sb-site.
 			scrollLock: false, // true or false - Prevent scrolling of site when a Slidebar is open.
 			disableOver: false, // integer or false - Hide Slidebars over a specific width.
-			hideControlClasses: false // true or false - Hide controls at same width as disableOver.
+			hideControlClasses: false, // true or false - Hide controls at same width as disableOver.
+			onOpen: function() { },
+			onClose: function() { }			
 		}, options );
 
 		// -----------------------
@@ -200,6 +202,7 @@
 
 		// Open a Slidebar
 		function open( side ) {
+			settings.onOpen();
 			// Check to see if opposite Slidebar is open.
 			if ( side === 'left' && $left && rightActive || side === 'right' && $right && leftActive ) { // It's open, close it, then continue.
 				close();
@@ -226,6 +229,7 @@
 			
 		// Close either Slidebar
 		function close( url, target ) {
+			settings.onClose()
 			if ( leftActive || rightActive ) { // If a Slidebar is open.
 				if ( leftActive ) {
 					animate( $left, '0px', 'left' ); // Animation
