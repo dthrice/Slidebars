@@ -9,7 +9,7 @@
     "url": "https://github.com/dthrice/Slidebars/"
   },
   "dependencies": {
-    "jquery": "*",
+    "jquery": "*"
   },
   "preferGlobal": true,
   "license": "MIT"
