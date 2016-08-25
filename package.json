@@ -1,0 +1,17 @@
+{
+  "name": "slidebars",
+  "version": "0.10.3",
+  "description": "Off Canvas",
+  "author": "Your Name <you.name@example.org>",
+  "main": "dist/0.10.3/slidebars.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dthrice/Slidebars/"
+  },
+  "dependencies": {
+    "jquery": "*",
+  },
+  "preferGlobal": true,
+  "private": true,
+  "license": "MIT"
+}
