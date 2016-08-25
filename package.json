@@ -12,6 +12,5 @@
     "jquery": "*",
   },
   "preferGlobal": true,
-  "private": true,
   "license": "MIT"
 }
